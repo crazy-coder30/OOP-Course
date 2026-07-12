@@ -8,5 +8,5 @@ Each discussion folder contains subfolders for individual problems, with a stand
 ## Progress
 
 ### Discussion 1
-- **Problem 1** — Triangle Area Calculator: computes area from base and height input
+- **Problem 1** — Triangle Area Calculator : computes area from base and height input
 - **Problem 2** - loading...
