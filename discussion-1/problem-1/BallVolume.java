@@ -11,6 +11,6 @@ public class BallVolume{
 
         System.out.println("volume of the ball: " + volume);
 
-         sc.close();
+        sc.close();
     }
 }
