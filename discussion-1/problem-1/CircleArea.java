@@ -9,7 +9,7 @@ public class CircleArea{
 
         double area = Math.PI * Math.pow(radius, 2);
 
-        System.out.println("Area of thecircle: " + area);
+        System.out.println("Area of the circle: " + area);
 
         sc.close();
     }
