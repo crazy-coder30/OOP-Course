@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class greatestNum
 {
@@ -6,25 +7,23 @@ public class greatestNum
     {
         Scanner sc = new Scanner(System.in);
 
-        double[] arr = new double[1000];
-        int n = 0;
+        ArrayList<Double>numbers = new ArrayList<>();
 
         System.out.print("Enter the numbers you want in :");
 
-        while (sc.hasNextDouble() && n < arr.length)
+        while (sc.hasNextDouble())
         {
-            arr[n] = sc.nextDouble();
-            n++;
+            numbers.add(sc.nextDouble());
         }
-        if (n > 0)
+        if (!numbers.isEmpty())
         {
-            double greatest = arr[0];
+            double greatest = numbers.get(0);
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < numbers.size(); i++)
             {
-                if (arr[i] > greatest)
+                if (numbers.get(i) > greatest)
                 {
-                    greatest = arr[i];
+                    greatest = numbers.get(i);
                 }
             }
             System.out.println("Greatest number: " + greatest);
